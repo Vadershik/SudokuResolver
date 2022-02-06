@@ -1,47 +1,66 @@
 ﻿using System;
+using System.IO;
+using System.Text;
+using System.Linq;
 
 class Program {
     public const int GRID_SIZE = 9;
-
+    //public string path = @"";
+    // public static void setpath(string newpath) {
+    //     path=newpath;
+    // }
     static void Main(string[] args) {
-        int[,] board = {
-            {0,0,0, 1,2,6, 0,0,0},
-            {7,8,2, 0,0,4, 0,6,1},
-            {4,1,0, 0,9,0, 3,2,5},
+        int[,] board = new int[GRID_SIZE, GRID_SIZE];
+        // board = {
+        //     {0,0,0, 1,2,6, 0,0,0},
+        //     {7,8,2, 0,0,4, 0,6,1},
+        //     {4,1,0, 0,9,0, 3,2,5},
             
-            {3,6,7, 8,4,5, 0,0,0},
-            {1,0,8, 0,7,2, 5,3,6},
-            {0,0,0, 3,6,1, 7,8,4},
+        //     {3,6,7, 8,4,5, 0,0,0},
+        //     {1,0,8, 0,7,2, 5,3,6},
+        //     {0,0,0, 3,6,1, 7,8,4},
 
-            {0,3,0, 2,8,7, 0,0,9},
-            {8,0,0, 6,5,0, 0,1,0},
-            {2,5,9, 4,0,3, 6,7,0},
-        };
+        //     {0,3,0, 2,8,7, 0,0,9},
+        //     {8,0,0, 6,5,0, 0,1,0},
+        //     {2,5,9, 4,0,3, 6,7,0},
+        // };
+#region Opening file board.txt
+        StreamReader sr = new StreamReader("board.txt"); //if u used path, change "board.txt" to path
+        for(int i = 0; i < GRID_SIZE; i++) {
+            string[] s = sr.ReadLine().Split(" ");
+            for(int j = 0; j < GRID_SIZE; j++) {
+                board[i,j] = int.Parse(s[j]);
+            }
+        }
+#endregion
         if(solveBoard(board)) Console.WriteLine("Solved Successfully!");
         else Console.WriteLine("Unsolvable board(");
         printBoard(board);
+        solveBoard(board);
     }
-
     static void printBoard(int[,] board) {
         int count = 0;
         int countRow = 1;
+        StreamWriter sw = new StreamWriter("solveboard.txt");
         for(int i = 0; i < GRID_SIZE; i++) {
             for(int j = 0; j < GRID_SIZE; j++) {
                 if(count==3) {
                     count=0;
-                    Console.Write("|");
+                    sw.Write("|");
                 }
-                Console.Write(board[i,j]);
+                sw.Write(board[i,j]);
                 count++;
             }
             if(countRow==3) {
                 countRow = 0;
-                Console.Write("\n-----------");
+                sw.WriteLine();
+                sw.Write("-----------");
             }
-            Console.Write("\n");
+            sw.WriteLine();
             count=0;
             countRow++;
         }
+        sw.Close();
     }
 
     static bool isNumberInRow(int[,] board, int number, int row) {

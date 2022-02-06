@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Sudoku Solver\\Main\\Main.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Sudoku Solver\\SudokuSolver\\Main.csproj",
       "projectName": "Main",
-      "projectPath": "C:\\Users\\user\\Desktop\\Sudoku Solver\\Main\\Main.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\Sudoku Solver\\SudokuSolver\\Main.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Sudoku Solver\\Main\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\Sudoku Solver\\SudokuSolver\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
