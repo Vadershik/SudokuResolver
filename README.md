@@ -1,4 +1,3 @@
-
 <center>
   <img src="https://static.ukrinform.com/photos/2021_08/thumb_files/630_360_1629194308-709.jpg">
 </center>
@@ -8,6 +7,7 @@ Program for solving Sudoku levels.
 You can get acquainted with the game on Wikipedia [Sudoku](https://en.wikipedia.org/wiki/Sudoku).
 
 ## Instructions for use
+We must write empty field as "0"
 > Write your sudoku fields to board.txt
 ```
 0 0 0 1 2 6 0 0 0
@@ -38,6 +38,7 @@ You can get acquainted with the game on Wikipedia [Sudoku](https://en.wikipedia.
 Программа для решения уровней судоку. Ознакомиться с игрой можно в Википедии [Судоку](https://en.wikipedia.org/wiki/Sudoku).
 
 ## Инструкция по применению
+Пустое поле записывается как "0"
 > Запишите свои поля судоку в файл board.txt
 ```
 0 0 0 1 2 6 0 0 0
