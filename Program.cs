@@ -41,26 +41,27 @@ class Program {
     static void printBoard(int[,] board) {
         int count = 0;
         int countRow = 1;
-        StreamWriter sw = new StreamWriter("solveboard.txt");
-        for(int i = 0; i < GRID_SIZE; i++) {
-            for(int j = 0; j < GRID_SIZE; j++) {
-                if(count==3) {
-                    count=0;
-                    sw.Write("|");
-                }
-                sw.Write(board[i,j]);
-                count++;
-            }
-            if(countRow==3) {
-                countRow = 0;
-                sw.WriteLine();
-                sw.Write("-----------");
-            }
-            sw.WriteLine();
-            count=0;
-            countRow++;
-        }
-        sw.Close();
+        using(StreamWriter sw = new StreamWriter("solveboard.txt")) {
+			for(int i = 0; i < GRID_SIZE; i++) {
+				for(int j = 0; j < GRID_SIZE; j++) {
+					if(count==3) {
+						count=0;
+						sw.Write("| ");
+					}
+					sw.Write($"{board[i,j]} ");
+					count++;
+				}
+				if(countRow==3) {
+					countRow = 0;
+					sw.WriteLine();
+					sw.Write("---------------------");
+				}
+				sw.WriteLine();
+				count=0;
+				countRow++;
+			}
+			sw.Close();
+		}
     }
 
     static bool isNumberInRow(int[,] board, int number, int row) {

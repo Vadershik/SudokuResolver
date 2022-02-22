@@ -14,7 +14,6 @@ C:\Users\user\Desktop\Sudoku Solver\Main\obj\Debug\net5.0\Main.dll
 C:\Users\user\Desktop\Sudoku Solver\Main\obj\Debug\net5.0\ref\Main.dll
 C:\Users\user\Desktop\Sudoku Solver\Main\obj\Debug\net5.0\Main.pdb
 C:\Users\user\Desktop\Sudoku Solver\Main\obj\Debug\net5.0\Main.genruntimeconfig.cache
-C:\Users\user\Desktop\Sudoku Solver\SudokuSolver\obj\Debug\net5.0\Main.csprojAssemblyReference.cache
 C:\Users\user\Desktop\Sudoku Solver\SudokuSolver\obj\Debug\net5.0\Main.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\user\Desktop\Sudoku Solver\SudokuSolver\obj\Debug\net5.0\Main.AssemblyInfoInputs.cache
 C:\Users\user\Desktop\Sudoku Solver\SudokuSolver\obj\Debug\net5.0\Main.AssemblyInfo.cs
@@ -30,3 +29,4 @@ C:\Users\user\Desktop\Sudoku Solver\SudokuSolver\bin\Debug\net5.0\Main.dll
 C:\Users\user\Desktop\Sudoku Solver\SudokuSolver\bin\Debug\net5.0\ref\Main.dll
 C:\Users\user\Desktop\Sudoku Solver\SudokuSolver\bin\Debug\net5.0\Main.pdb
 C:\Users\user\Desktop\Sudoku Solver\SudokuSolver\obj\Debug\net5.0\Main.genruntimeconfig.cache
+C:\Users\user\Desktop\Sudoku Solver\SudokuSolver\obj\Debug\net5.0\Main.csproj.AssemblyReference.cache

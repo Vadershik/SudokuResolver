@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "MECVUyFH9tdhlr5zKYbPRHkZGTlOobHug7IV4IaGOLZUwQyCmiAD2XNgOh4TWk9uQbFZbFVi3tXI0+G1W7PN8g==",
+  "dgSpecHash": "3tYh4Vl/Lc3BrMxzaQxf3EuNTjEYhiVFPE0oUXF1AYli7DcpHaRfpLgA0AbMw1ghqYGQYRZf9Wrihw/IDIatlA==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Desktop\\Sudoku Solver\\SudokuSolver\\Main.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\5.0.14\\microsoft.netcore.app.host.win-x86.5.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
